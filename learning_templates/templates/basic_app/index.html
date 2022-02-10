@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+    {% block body_block %}
+        <h1>Welcome to index</h1>
+        <h2><strong>{{ insert_text|cut:'am' }} before {{before}}. I am {{ num|add:10 }}% sure. </strong></h2>
+
+{% endblock %}
+
